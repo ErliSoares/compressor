@@ -28,7 +28,7 @@ flutter:
   plugin:
     platforms:
       android:
-        package: br.com.erliss.compressor.compressor
+        package: br.com.erliss.compressor
         pluginClass: CompressorPlugin
       ios:
         pluginClass: CompressorPlugin

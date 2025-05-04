@@ -11,12 +11,12 @@ class Compressor {
   }
 
   static Future<bool?> compressImage(
-      String inputFile,
-      String outputFile, {
-        int minQuality = 50,
-        int maxQuality = 100,
-        int speed = 1,
-        double floydDitherAmount = 1,
+    String inputFile,
+    String outputFile, {
+    int minQuality = 50,
+    int maxQuality = 100,
+    int speed = 1,
+    double floydDitherAmount = 1,
   }) async {
     final bool? result = await _channel.invokeMethod(
       'compressImage',
